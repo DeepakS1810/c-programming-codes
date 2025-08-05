@@ -1,0 +1,15 @@
+#include<stdio.h> 
+int main()
+{
+int num;
+printf("enter a value:"); scanf("%d", &num); int sum=0;
+for (int i=1;i<num;i++) {
+if (num&i==0) {
+sum+=i;
+}
+}
+if (num==sum)
+printf("\nperfect number:");
+else
+printf("\nnot perfect number:");
+}
